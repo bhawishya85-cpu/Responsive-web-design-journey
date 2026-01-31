@@ -1,6 +1,12 @@
+* {
+  box-sizing: border-box;
+} /*used this so webpage remains same on github pages.*/
+
 body{
-    margin: 0px;
     background-color: rgba(255, 255, 255, 0.778);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /*used this so page contents dosent spill.*/
 }
 header{
     display : flex;
@@ -104,8 +110,8 @@ color: rgb(68, 68, 250);
     margin-top: 250px !important;
     margin-left: 770px;
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   color:white;
-   font-size: 5rem;
+   color:rgb(1, 1, 43);
+   font-size: 4.6rem;
    font-weight: 900 ;
    display: inline;
 }
@@ -241,11 +247,10 @@ color: rgb(68, 68, 250);
     text-align: center;
 }
 .card-btn:hover{
-    transform: scale(1.05);
     transition: 0.4s ease;
     background-color: #b6c7ff;
     color: rgb(1, 1, 84);
-    border: 2px solid rgb(1, 1, 84);
+    outline: 2px solid rgb(1, 1, 84);
 
 }
 
