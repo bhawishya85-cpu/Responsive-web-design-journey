@@ -93,11 +93,12 @@ color: rgb(68, 68, 250);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    border: solid skyblue;
+    border: 1px solid skyblue;
+    box-shadow: 0 20px 40px rgba(0, 4, 43, 0.816);
     border-radius: 100px;
     display: flex;
     flex-direction: row;
-} /*i again used flex property here and used direction : row to stack items horizontally .*/
+} /*i again used flex property here and used direction : row to stack items horizontally . i added box shadow for depth */
 
 #intro-h2{
     margin-top: 250px !important;
@@ -122,35 +123,133 @@ color: rgb(68, 68, 250);
 }
 
 #about-section{
-    background-image: linear-gradient(rgb(255, 255, 255),rgb(171, 179, 255));
+    background-color: rgb(0, 0, 186);
     margin-top: 0px;
     padding-top: 140px;
     width: 100%;
     padding: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 #about{
-    padding-top: 0px;
-    padding-left: 30px;
+    background-color:aliceblue;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px;
     height: 1000px;
-    width: 1500px;
-    margin-left: 100px ;
-    display: flex;
-    flex-direction: column;
-
-}
-
-#about-section {
-    padding: 40px;
-    background-color: #f5f5f5;
+    max-width: 1800px;
+    width: 100%;
+    margin-left:auto ;
+    margin-right: auto;
+    display: block;
+    border-radius: 100px;
+    border: 1px solid rgba(53, 53, 115, 0.25);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.816);
 }
 
 #popular{
-    font-size: 3rem;
-    color: rgb(1, 11, 47);
+    font-size: 2.9rem;
+    color: rgb(0, 0, 0);
     font-weight: 700;
     margin-bottom: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#popular-p{
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#destinations-card {
+    max-width: 1700px;
+    width: 100%;
+    height: 600px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.cards{
+    max-width: 400px;
+    width:100%;
+    height: 650px;
+    margin-left: 14px;
+    margin-right: 14px;
+    padding: 10px;
+    padding-bottom: 20px;
+    border: solid rgb(214, 214, 214);
+    border-radius: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(249, 249, 233);
+}
 
+.card-imgs{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.card-h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 37, 45);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.card-p{
+    font-family: monospace;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.cards:hover{
+    transform: scale(1.05);
+    transition: 0.4s ease;
+    box-shadow:0 20px 40px rgba(157, 157, 157, 0.816);
+}
+
+.card-btn{
+    max-width: 150px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 120px;
+    padding-top:2px ;
+    padding-bottom: 2px;
+    background-color: rgb(1, 1, 84);
+    color: whitesmoke;
+    display:block;
+    text-align: center;
+}
+.card-btn:hover{
+    transform: scale(1.05);
+    transition: 0.4s ease;
+    background-color: #b6c7ff;
+    color: rgb(1, 1, 84);
+    border: 2px solid rgb(1, 1, 84);
+
+}
+
+.c-btn{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
