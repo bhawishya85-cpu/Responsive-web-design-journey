@@ -1,0 +1,156 @@
+body{
+    margin: 0px;
+    background-color: rgba(255, 255, 255, 0.778);
+}
+header{
+    display : flex;
+    background-color: rgb(2, 15, 63);
+    color: white;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+}  /*  Here i defined some top and left width to give a position to the header. I also defined padding for out heading. I changed display to flex because everything was stacked vertically , now everything is horizontally.  */     
+
+header > h1{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 15px  ;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.9);
+} /*  i used child combinator here because i wanted to simply target the h1 tag.  */
+
+header span {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.5rem;
+    margin-top: 15px  ;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    color: #b6c7ff; /* soft accent */
+} /*gave it a dictinct effect.*/
+
+header img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    filter: brightness(0) invert(1);
+} /*used a invert filter to change png color from black to white*/
+
+.nav-list {
+    padding: 40 ;
+    margin-left: auto;
+    text-align: right;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-right: 80px;
+    list-style: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    font-size: 0.95rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} /*resetted the font decoration to none so default underline dissappears.*/
+
+.nav-list a:hover{
+    color:rgb(175, 231, 251);
+} /*used pseudo-selector , then used a hover class to set a hover effect. */
+.nav-list a:focus{
+    outline-style:auto;
+    color: aqua;
+}
+.nav-list a:active{
+color: rgb(68, 68, 250);
+}
+
+.navBar {
+    margin-left: auto;
+}
+
+#intro-base{
+    margin-top: 0px;
+    padding-top: 80px;
+    background-image: linear-gradient(rgb(2, 15, 63),rgb(0, 0, 186));
+    width: 100%;
+    padding-bottom: 80px;
+}/*base intro have padding of 140 so i can push main intro div down.*/
+
+#intro{
+    max-width: 1700px;
+    width: 100%;
+    height:900px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-image: url("background-light.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    border: solid skyblue;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+} /*i again used flex property here and used direction : row to stack items horizontally .*/
+
+#intro-h2{
+    margin-top: 250px !important;
+    margin-left: 770px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color:white;
+   font-size: 5rem;
+   font-weight: 900 ;
+   display: inline;
+}
+
+#airplane{
+    width: 200px;
+    margin-top: 150px;
+    margin-right: 0px;
+    display: inline;
+} /*airplane image in div*/
+
+#intro-img {
+    width: 800px;
+    height: auto;
+}
+
+#about-section{
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(171, 179, 255));
+    margin-top: 0px;
+    padding-top: 140px;
+    width: 100%;
+    padding: 40px;
+}
+
+#about{
+    padding-top: 0px;
+    padding-left: 30px;
+    height: 1000px;
+    width: 1500px;
+    margin-left: 100px ;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#about-section {
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+#popular{
+    font-size: 3rem;
+    color: rgb(1, 11, 47);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
