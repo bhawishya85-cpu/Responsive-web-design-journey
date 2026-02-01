@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}/*learned this today that setting scroll behaviour can grately smooth out the scrolling in webpage.*/
+
 * {
   box-sizing: border-box;
 } /*used this so webpage remains same on github pages.*/
@@ -128,7 +132,7 @@ color: rgb(68, 68, 250);
     height: auto;
 }
 
-#about-section{
+#topPlaces-section{
     background-color: rgb(0, 0, 186);
     margin-top: 0px;
     padding-top: 140px;
@@ -138,7 +142,7 @@ color: rgb(68, 68, 250);
     padding-right: 0px;
 }
 
-#about{
+#top-places{
     background-color:aliceblue;
     background-repeat: no-repeat;
     background-position: center;
